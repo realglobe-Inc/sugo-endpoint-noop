@@ -1,0 +1,50 @@
+{
+  "name": "sugo-endpoint-noop",
+  "version": "1.0.0",
+  "description": "Endpoint to do nothing.",
+  "main": "lib",
+  "scripts": {
+    "prepublish": "./ci/build.js",
+    "test": "./ci/test.js"
+  },
+  "repository": "realglobe-Inc/sugo-endpoint-noop",
+  "keywords": [
+    "SUGOS",
+    "endpoint"
+  ],
+  "author": {
+    "email": "okunishitaka.com@gmail.com",
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/realglobe-Inc/sugo-endpoint-noop/issues"
+  },
+  "homepage": "https://github.com/realglobe-Inc/sugo-endpoint-noop#readme",
+  "dependencies": {
+    "co": "^4.6.0",
+    "debug": "^2.2.0"
+  },
+  "devDependencies": {
+    "ape-doc": "^2.0.2",
+    "ape-tasking": "^4.0.2",
+    "ape-tmpl": "^5.0.6",
+    "ape-updating": "^4.0.1",
+    "apemanport": "^1.0.0",
+    "apemanrequest": "^1.1.0",
+    "apemansleep": "^1.0.3",
+    "coz": "^6.0.3",
+    "injectmock": "^2.0.0",
+    "sg-server": "^1.2.2",
+    "sugos-assets": "^1.1.5",
+    "sugos-ci": "^1.4.0"
+  },
+  "engines": {
+    "node": ">=6",
+    "npm": ">=3"
+  },
+  "publishConfig": {
+    "registry": "https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-local"
+  }
+}
