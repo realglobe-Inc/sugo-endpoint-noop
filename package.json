@@ -1,6 +1,6 @@
 {
   "name": "sugo-endpoint-noop",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Endpoint to do nothing.",
   "main": "lib",
   "scripts": {
@@ -27,18 +27,18 @@
     "debug": "^2.2.0"
   },
   "devDependencies": {
-    "ape-doc": "^2.0.2",
-    "ape-tasking": "^4.0.2",
-    "ape-tmpl": "^5.0.6",
-    "ape-updating": "^4.0.1",
-    "apemanport": "^1.0.0",
-    "apemanrequest": "^1.1.0",
-    "apemansleep": "^1.0.3",
+    "ape-doc": "^2.0.3",
+    "ape-tasking": "^4.0.3",
+    "ape-tmpl": "^5.0.11",
+    "ape-updating": "^4.0.4",
+    "apemanport": "^2.0.2",
+    "apemanrequest": "^2.0.3",
+    "apemansleep": "^1.0.7",
     "coz": "^6.0.3",
     "injectmock": "^2.0.0",
-    "sg-server": "^1.2.2",
-    "sugos-assets": "^1.1.5",
-    "sugos-ci": "^1.4.0"
+    "sg-server": "^1.2.7",
+    "sugo-ci-endpoint": "^1.0.0",
+    "sugos-assets": "^1.1.9"
   },
   "engines": {
     "node": ">=6",
