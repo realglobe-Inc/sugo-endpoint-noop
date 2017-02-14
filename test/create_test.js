@@ -7,19 +7,18 @@
 const create = require('../lib/create.js')
 const co = require('co')
 const sgServer = require('sg-server')
-const apemanrequest = require('apemanrequest')
-const apemansleep = require('apemansleep')
-const apemanport = require('apemanport')
+const arequest = require('arequest')
+const asleep = require('asleep')
+const aport = require('aport')
 const assert = require('assert')
 
 describe('create', () => {
   let server, baseUrl
-  let request = apemanrequest.create()
-  let sleep = apemansleep.create()
+  let request = arequest.create()
   before(() => co(function * () {
     let endpoint = create({})
     assert.ok(endpoint)
-    let port = yield apemanport.find()
+    let port = yield aport()
     server = sgServer({
       endpoints: {
         '/foo/bar': endpoint
@@ -30,7 +29,7 @@ describe('create', () => {
   }))
 
   after(() => co(function * () {
-    yield sleep.sleep(10)
+    yield asleep(10)
     yield server.close()
   }))
 
